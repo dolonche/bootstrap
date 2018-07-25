@@ -1,0 +1,15 @@
+.border {
+  border: 1px solid #000 !important;
+}
+
+@each $color_name,
+$color in $colors {
+  @each $color_type,
+  $color_value in $color {
+    @if $color_type=="base" {
+      .border-#{$color_name} {
+        border-color: $color_value !important;
+      }
+    }
+  }
+}
