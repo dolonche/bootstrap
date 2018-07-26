@@ -16,75 +16,30 @@
     <div class="container">
       <div class="row">
         <p class="title-section">
-          Чтобы добавить блоку бэкграунд определенного цвета нужно добавить класс с названием этого цвета. Если нужно изменить цвет текста, то надо добавить блоку класс, включающий, название цвета и "-text".
+          Чтобы добавить карточке(или любому другому блоку) рамку определенного цвета, достаточно добавить клсс border для задания рамки и класс border-color, где color - название цвета.
         </p>
-        <p class="title-section">Все цвета и их названия приведены ниже:</p>
-        <section class="colors-section">
-          <div class="materialize-red card-color">
-            <span>materialize-red</span>
-          </div>
-          <div class="red card-color">
-            <span>red</span>
-          </div>
-          <div class="pink card-color">
-            <span>pink</span>
-          </div>
-          <div class="purple card-color">
-            <span>purple</span>
-          </div>
-          <div class="deep-purple card-color">
-            <span>deep-purple</span>
-          </div>
-          <div class="indigo card-color">
-            <span>indigo</span>
-          </div>
-          <div class="blue card-color">
-            <span>blue</span>
-          </div>
-          <div class="blue-grey card-color">
-            <span>blue-grey</span>
-          </div>
-          <div class="grey card-color">
-            <span>grey</span>
-          </div>
-          <div class="light-blue card-color">
-            <span>light-blue</span>
-          </div>
-          <div class="brown card-color">
-            <span>brown</span>
-          </div>
-          <div class="cyan card-color">
-            <span>cyan</span>
-          </div>
-          <div class="teal card-color">
-            <span>teal</span>
-          </div>
-          <div class="green card-color">
-            <span>green</span>
-          </div>
-          <div class="light-green card-color">
-            <span>light-green</span>
-          </div>
-          <div class="lime card-color">
-            <span>lime</span>
-          </div>
-          <div class="yellow card-color">
-            <span>yellow</span>
-          </div>
-          <div class="amber card-color">
-            <span>amber</span>
-          </div>
-          <div class="orange card-color">
-            <span>orange</span>
-          </div>
-          <div class="deep-orange card-color">
-            <span>deep-orange</span>
-          </div>
-        </section>
         <p class="col-md-12 title-section">Примеры:</p>
         <div class="example border border-blue-grey">
-          <button class="btn teal purple-text">Button</button>
-          <p>&lt;button class="btn teal purple-text"&gt;Button&lt/button&gt;</p>
+          <div class="card border border-lime" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <p>
+            &ltdiv class="card border border-lime" style="width: 18rem;"&gt
+            <br> &ltdiv class="card-body"&gt
+            <br> &lth5 class="card-title"&gtCard title&lt/h5&gt
+            <br> &lth6 class="card-subtitle mb-2 text-muted"&gtCard subtitle&lt/h6&gt
+            <br> &ltp class="card-text"&gtSome quick example text to build on the card title and make up the bulk of the card's content.&lt/p&gt
+            <br> &lta href="#" class="card-link"&gtCard link&lt/a&gt
+            <br> &lta href="#" class="card-link"&gtAnother link&lt/a&gt
+            <br> &lt/div&gt
+            <br> &lt/div&gt
+          </p>
           </p>
         </div>
       </div>

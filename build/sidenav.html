@@ -102,76 +102,31 @@
     <div class="container">
       <div class="row">
         <p class="title-section">
-          Чтобы добавить блоку бэкграунд определенного цвета нужно добавить класс с названием этого цвета. Если нужно изменить цвет текста, то надо добавить блоку класс, включающий, название цвета и "-text".
+          меню можно сделать двух видов: по умолчанию закрытое (для этого достаточно создать список с классом sidenav и ссылку для его открытия с классом <code>sidenav-trigger</code> и аттрибутом <code>data-target="slide-out"</code>, а также нужно написать скрипт с иницилизацией сайднава <code>   $(document).ready(function() {
+      $('.sidenav').sidenav();
+          });</code>), для того чтобы сделать фиксированное меню необходимо проделать всё вышеописанное, а также добавить списку класс <code>sidenav-fixed</code>
         </p>
-        <p class="title-section">Все цвета и их названия приведены ниже:</p>
-        <section class="colors-section">
-          <div class="materialize-red card-color">
-            <span>materialize-red</span>
-          </div>
-          <div class="red card-color">
-            <span>red</span>
-          </div>
-          <div class="pink card-color">
-            <span>pink</span>
-          </div>
-          <div class="purple card-color">
-            <span>purple</span>
-          </div>
-          <div class="deep-purple card-color">
-            <span>deep-purple</span>
-          </div>
-          <div class="indigo card-color">
-            <span>indigo</span>
-          </div>
-          <div class="blue card-color">
-            <span>blue</span>
-          </div>
-          <div class="blue-grey card-color">
-            <span>blue-grey</span>
-          </div>
-          <div class="grey card-color">
-            <span>grey</span>
-          </div>
-          <div class="light-blue card-color">
-            <span>light-blue</span>
-          </div>
-          <div class="brown card-color">
-            <span>brown</span>
-          </div>
-          <div class="cyan card-color">
-            <span>cyan</span>
-          </div>
-          <div class="teal card-color">
-            <span>teal</span>
-          </div>
-          <div class="green card-color">
-            <span>green</span>
-          </div>
-          <div class="light-green card-color">
-            <span>light-green</span>
-          </div>
-          <div class="lime card-color">
-            <span>lime</span>
-          </div>
-          <div class="yellow card-color">
-            <span>yellow</span>
-          </div>
-          <div class="amber card-color">
-            <span>amber</span>
-          </div>
-          <div class="orange card-color">
-            <span>orange</span>
-          </div>
-          <div class="deep-orange card-color">
-            <span>deep-orange</span>
-          </div>
-        </section>
         <p class="col-md-12 title-section">Примеры:</p>
         <div class="example border border-blue-grey">
-          <button class="btn teal purple-text">Button</button>
-          <p>&lt;button class="btn teal purple-text"&gt;Button&lt/button&gt;</p>
-          </p>
+          <ul id="slide-out" class="sidenav p-0">
+            <li class="bold"><a href="index.html" class="waves-effect waves-teal">Colors</a></li>
+            <li class="bold"><a href="index.html" class="waves-effect waves-teal">Colors</a></li>
+            <li class="bold"><a href="index.html" class="waves-effect waves-teal">Colors</a></li>
+            <li class="bold"><a href="index.html" class="waves-effect waves-teal">Colors</a></li>
+            <li class="bold"><a href="index.html" class="waves-effect waves-teal">Colors</a></li>
+            <li class="bold"><a href="index.html" class="waves-effect waves-teal">Colors</a></li>
+          </ul>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+          <p>
+           <code>
+          &lt;ul id="slide-out" class="sidenav p-0"&gt;
+            <br> &lt;li class="bold"&gt;&lt;a href="index.html" class="waves-effect waves-teal"&gt;Colors&lt;/a&gt;&lt;/li&gt;
+            <br> &lt;li class="bold"&gt;&lt;a href="index.html" class="waves-effect waves-teal"&gt;Colors&lt;/a&gt;&lt;/li&gt;
+            <br> &lt;li class="bold"&gt;&lt;a href="index.html" class="waves-effect waves-teal"&gt;Colors&lt;/a>&lt;/li&gt;
+            <br>&lt;li class="bold"&gt;&lt;a href="index.html" class="waves-effect waves-teal"&gt;Colors&lt;/a&gt;&lt;/li&gt;<br>&lt;li class="bold"&gt;&lt;a href="index.html" class="waves-effect waves-teal"&gt;Colors&lt;/a&gt;&lt;/li&gt;<br>&lt;li class="bold"&gt;&lt;a href="index.html" class="waves-effect waves-teal"&gt;Colors&lt;/a&gt;&lt;/li&gt;
+            <br> &lt;/ul&gt;
+             <br> &lt;a href="#" data-target="slide-out" class="sidenav-trigger"&gt;&lt;i class="material-icons">menu&lt;/i&gt;&lt;/a&gt;</code></p>
         </div>
       </div>
     </div>
@@ -205,6 +160,7 @@
   <script src="js/collapsible.js"></script>
   <script src="js/dropdown.js"></script>
   <script src="js/stellar.min.js"></script>
+  <script src="js/waves.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.sidenav');
